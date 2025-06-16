@@ -5,8 +5,8 @@
     "url": "https://gildev.dev/gdek",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
-        "vid": "0xFEED"
+        "vid": "0x91DE",
+        "pid": "0x0001"
     },
     "processor": "RP2040",
     "bootloader": "rp2040",
