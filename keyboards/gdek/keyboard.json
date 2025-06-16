@@ -137,7 +137,7 @@
         "split_count": [30, 30],
         "max_brightness": 176,
         "default": {
-            "val": 128
+            "val": 64
         },
         "animations": {
             "alphas_mods": true,
