@@ -27,7 +27,7 @@
     "encoder": {
         "enabled" : true,
         "rotary" : [
-            {"pin_a": "GP15", "pin_b": "GP14"}
+            {"pin_a": "GP15", "pin_b": "GP14", "resolution": 2}
         ]
     },
     "split": {
@@ -47,7 +47,7 @@
         "encoder": {
             "right": {
                 "rotary": [
-                    {"pin_a": "GP19", "pin_b": "GP18"}
+                    {"pin_a": "GP19", "pin_b": "GP18", "resolution": 2}
                 ]
             }
         },
