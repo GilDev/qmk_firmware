@@ -39,6 +39,7 @@
             "driver": "vendor",
             "pin": "GP1"
         },
+        "soft_serial_speed": 5,
         "transport": {
             "sync": {
                 "matrix_state": true
@@ -55,6 +56,11 @@
             "right": {
                 "cols": ["GP2", "GP4", "GP5", "GP6", "GP8", "GP10"],
                 "rows": ["GP3", "GP9", "GP11", "GP12", "GP13"]
+            }
+        },
+        "dip_switch": {
+            "right": {
+                "pins": ["GP17"]
             }
         }
     },
@@ -171,6 +177,10 @@
             "pixel_rain": true
         },
         "sleep": true,
+        "dip_switch": {
+            "enabled": true,
+            "pins": ["GP13"]
+        },
         "layout": [
             { "flags": 4, "matrix": [0, 5], "x": 95, "y":  7 },
             { "flags": 4, "matrix": [0, 4], "x": 95, "y": 21 },
