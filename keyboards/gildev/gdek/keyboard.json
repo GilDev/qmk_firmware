@@ -21,13 +21,13 @@
     },
     "diode_direction": "COL2ROW",
     "matrix_pins": {
-        "cols": ["GP27", "GP26", "GP25", "GP24", "GP23", "GP22"],
+        "cols": ["GP27", "GP26", "GP25", "GP24", "GP23", "GP22", "GP13"],
         "rows": ["GP28", "GP20", "GP19", "GP18", "GP17"]
     },
     "encoder": {
         "enabled" : true,
         "rotary" : [
-            {"pin_a": "GP15", "pin_b": "GP14", "resolution": 2}
+            {"pin_a": "GP14", "pin_b": "GP15", "resolution": 4}
         ]
     },
     "split": {
@@ -48,21 +48,16 @@
         "encoder": {
             "right": {
                 "rotary": [
-                    {"pin_a": "GP19", "pin_b": "GP18", "resolution": 2}
+                    {"pin_a": "GP18", "pin_b": "GP19", "resolution": 4}
                 ]
             }
         },
         "matrix_pins": {
             "right": {
-                "cols": ["GP2", "GP4", "GP5", "GP6", "GP8", "GP10"],
+                "cols": ["GP2", "GP4", "GP5", "GP6", "GP8", "GP10", "GP17"],
                 "rows": ["GP3", "GP9", "GP11", "GP12", "GP13"]
             }
         },
-        "dip_switch": {
-            "right": {
-                "pins": ["GP17"]
-            }
-        }
     },
     "layouts": {
         "LAYOUT": {
@@ -99,6 +94,8 @@
                 {"label": "L23", "matrix": [2, 3], "x":  3, "y": 2.25},
                 {"label": "L24", "matrix": [2, 4], "x":  4, "y": 2.50},
                 {"label": "L25", "matrix": [2, 5], "x":  5, "y": 2.75},
+                {"label": "L26", "matrix": [4, 6], "x":  6, "y": 2.75},
+                {"label": "R26", "matrix": [9, 6], "x":  7, "y": 2.75},
                 {"label": "R25", "matrix": [7, 5], "x":  6, "y": 2.75},
                 {"label": "R24", "matrix": [7, 4], "x":  7, "y": 2.50},
                 {"label": "R23", "matrix": [7, 3], "x":  8, "y": 2.25},
@@ -141,7 +138,7 @@
     "rgb_matrix": {
         "driver": "ws2812",
         "split_count": [30, 30],
-        "max_brightness": 128,
+        "max_brightness": 120,
         "default": {
             "val": 64
         },
@@ -192,10 +189,6 @@
             "solid_multisplash": true
         },
         "sleep": true,
-        "dip_switch": {
-            "enabled": true,
-            "pins": ["GP13"]
-        },
         "layout": [
             { "flags": 4, "matrix": [0, 5], "x":  86, "y":  5 },
             { "flags": 4, "matrix": [0, 4], "x":  69, "y":  2 },
