@@ -41,6 +41,7 @@
         },
         "soft_serial_speed": 3,
         "transport": {
+            "watchdog": true,
             "sync": {
                 "matrix_state": true
             }
